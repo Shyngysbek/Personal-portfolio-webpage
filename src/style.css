@@ -1,0 +1,259 @@
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  margin-top: 70px;
+  z-index: 0;
+}
+
+/*Header*/
+header {
+  height: 70px;
+  width: 100%;
+  background-color: #C41E3A;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+#navbar {
+  width: 100%;
+  font-size: 1.4rem;
+  margin: auto 40px auto 0;
+}
+
+#navbar ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: right;
+  gap: 40px;
+  margin: 0;
+}
+
+#navbar ul li {
+  display: block;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*Welcome Section*/
+#welcome-section {
+  height: 100vh;
+  width: 100%;
+  background-color: #282C35;
+  position: relative;
+}
+
+#welcome-div {
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#welcome-section h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  margin: 0;
+}
+
+#welcome-section span {
+  font-size: 2rem;
+  color: #C41E3A;
+  font-style: italic;
+  font-weight: 100;
+}
+
+/*Projects Section*/
+#projects {
+  height: auto;
+  width: 100%;
+  background-color: #5072A7;
+  padding-top: 100px;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+#projects h2 {
+  color: white;
+  font-size: 2.3rem;
+  text-align: center;
+  margin: 0;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+#projects-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+}
+
+#projects .project-tile {
+  height: 450px;
+  width: 400px;
+  margin-bottom: 35px;
+}
+
+#projects-container::after {
+  content: "";
+  width: 400px;
+}
+
+#profile-link {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#profile-link button {
+  margin: 0 auto;
+  border: none;
+  width: 140px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 1.2rem;
+  background-color: #282C35;
+  color: white;
+}
+
+#profile-link button:hover {
+  cursor: pointer;
+}
+
+.project-tile:hover {
+  cursor: pointer;
+}
+
+.project-tile img {
+  width: inherit;
+  height: calc(100% - 70px);
+  object-fit: cover;
+  margin: 0;
+  display: block;
+}
+
+.project-tile div {
+  width: inherit;
+  height: 70px;
+  position: relative;
+  background-color: #282C35;
+  margin: 0;
+}
+
+.project-tile h3 {
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: white;
+}
+
+/*Contacts Section*/
+#contacts-section {
+  height: calc(100vh - 110px);
+  width: 100%;
+  background-color: #282C35;
+  margin: 0;
+  position: relative;
+}
+
+#contacts-section h2 {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+  margin: 0;
+}
+
+#contacts-section p {
+  font-size: 1.2rem;
+  color: white;
+  font-style: italic;
+  font-weight: 200;
+  text-align: center;
+}
+
+#contacts-div {
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 3rem;
+  align-items: center;
+  width: 30%;
+  margin: 0 auto;
+}
+
+.social-icons a {
+  color: white;
+}
+
+#social-icons-div {
+  position: relative;
+  top: 65%;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 110px;
+  border-top: 3px solid #C41E3A;
+  background-color: #282C35;
+  color: white;
+  flex-wrap: wrap;
+  overflow: hidden;
+  letter-spacing: 1.2;
+}
+
+footer li {
+  display: block;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: 100;
+}
+
+footer p {
+  padding: 10px 0;
+  margin: 0;
+}
+
+footer ul {
+  padding: 0;
+  margin: 0;
+}
